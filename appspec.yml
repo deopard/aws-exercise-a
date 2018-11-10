@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/aws-exercise-a
+hooks:
+  AfterInstall:
+    - location: scripts/set_owner
+      timeout: 5
+      runas: root
+    - location: scripts/install_dependencies
+      timeout: 120
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/restart_server
+      timeout: 10
+      runas: root
+  ValidateService: 
+    - location: scripts/validate_server
+      timeout: 30
+      runas: ec2-user
