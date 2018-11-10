@@ -1,0 +1,22 @@
+{
+  "name": "aws-exercise-a",
+  "version": "1.0.0",
+  "description": "AWS exercise project A",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deopard/aws-exercise-a.git"
+  },
+  "author": "Tom Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deopard/aws-exercise-a/issues"
+  },
+  "homepage": "https://github.com/deopard/aws-exercise-a#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
