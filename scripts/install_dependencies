@@ -2,6 +2,7 @@ echo '============================'
 echo 'Running install_dependencies'
 echo '============================'
 
-source /home/ec2-user/.bash_profile
+sudo su -
+echo "sudo change"
 cd /var/www/aws-exercise-a
 npm install
